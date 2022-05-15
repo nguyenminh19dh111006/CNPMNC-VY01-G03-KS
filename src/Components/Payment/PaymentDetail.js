@@ -12,7 +12,7 @@ function PaymentDetail() {
 
     
     useEffect(()=>{
-        Axios.get('http://localhost:8090/api/phong/1')
+        Axios.get('http://157.245.207.242:8090/api/phong/1')
         .then(res => {
             console.log("Getting from ::::",res.data)
             setDate(res.data)
@@ -20,7 +20,7 @@ function PaymentDetail() {
     },[])
 
     useEffect(()=>{
-        Axios.get('http://localhost:8090/api/khachsan/1')
+        Axios.get('http://157.245.207.242:8090/api/khachsan/1')
         .then(res => {
             console.log("Getting from ::::",res.data)
             setDato(res.data)

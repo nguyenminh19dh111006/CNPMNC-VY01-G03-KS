@@ -35,7 +35,7 @@ function PartnerList(){
 
     const submitHandler = e =>{
         e.preventDefault()
-        Axios.post('http://localhost:8090/api/phong').then(response => {
+        Axios.post('http://157.245.207.242:8090/api/phong').then(response => {
             console.log(response)
         }).catch(error =>{
             console.log(error)
@@ -45,7 +45,7 @@ function PartnerList(){
     const [data, setDate] = useState([])
 
     useEffect(()=>{
-        Axios.get('http://localhost:8090/api/phong')
+        Axios.get('http://157.245.207.242:8090/api/phong')
         .then(res => {
             console.log("Getting from ::::",res.data)
             setDate(res.data)

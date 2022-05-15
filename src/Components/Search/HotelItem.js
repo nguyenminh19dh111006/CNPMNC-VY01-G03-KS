@@ -12,7 +12,7 @@ function HotelItem() {
     const diadiem = localStorage.getItem("SEARCH_INFO");
     
     useEffect(()=>{
-        Axios.get('http://localhost:8090/api/khachsan')
+        Axios.get('http://157.245.207.242:8090/api/khachsan')
         .then(res => {
             console.log("Getting from ::::",res.data)
             setkhachsan(res.data)
@@ -20,7 +20,7 @@ function HotelItem() {
     },[])
 
     useEffect(()=>{
-        Axios.get(`http://localhost:8090/api/khachsan/getHangSao/${rating}`)
+        Axios.get(`http://157.245.207.242:8090/api/khachsan/getHangSao/${rating}`)
         .then(res => {
             console.log("Getting from ::::",res.data)
             setkhachsanbyhangsao(res.data)
@@ -28,7 +28,7 @@ function HotelItem() {
     },[])
 
     useEffect(()=>{
-        Axios.get(`http://localhost:8090/api/diadiem/getDiaDiem/${diadiem}`)
+        Axios.get(`http://157.245.207.242:8090/api/diadiem/getDiaDiem/${diadiem}`)
         .then(res => {
             console.log("Getting from ::::",res.data)
             setdiadiembyid(res.data)
