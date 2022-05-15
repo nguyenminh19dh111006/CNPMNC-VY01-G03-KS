@@ -1,4 +1,5 @@
 {
+    "type":"module",
     "name": "vy1-g03-khachsan",
     "version": "0.1.0",
     "private": true,
