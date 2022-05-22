@@ -1,5 +1,4 @@
 import React, { useEffect, useState, Component, useRef } from "react";
-import { Link } from "react-router-dom";
 import Axios from 'axios';
 
 function openForm() {
@@ -22,6 +21,12 @@ function PartnerList(){
     const [SoDem, setsodem] = useState("");
     const [SoLuongNguoi, setsoluongnguoi] = useState("");
     
+    const handleDelete = (phongID) =>{
+        Axios.delete(`http://157.245.207.242:8090/api/phong/${phongID}`)
+        .then(response => {
+          window.location.reload();
+        }).catch(err=> console.log(err))
+    }
 
     const changeHandler = e =>{
         setidphong(e.target.IdPhong);
@@ -117,7 +122,7 @@ function PartnerList(){
       <td>{Data.SoDem}</td>
       <td>{Data.SoLuongNguoi}</td>
       <td><button className="bg-blue-300 outline-none focus:outline-none m-5 text-xs font-semibold p-2 rounded-lg" onClick={openForm}>Chỉnh sửa</button></td>
-      <td><button className="bg-blue-300 outline-none focus:outline-none m-5 text-xs font-semibold p-2 rounded-lg">Xóa</button></td>
+      <td><button className="bg-blue-300 outline-none focus:outline-none m-5 text-xs font-semibold p-2 rounded-lg" onClick={() => handleDelete(Data.IdPhong)}>Xóa</button></td>
     </tr>
     </tbody>))}
     </table>
