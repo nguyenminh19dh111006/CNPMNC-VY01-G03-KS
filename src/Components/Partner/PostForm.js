@@ -66,6 +66,7 @@ class PostForm extends Component{
                     <input className="ml-4 text-sm pl-1 rounded-lg" type="text" value={SoLuongNguoi} onChange={this.changeHandler} name="SoLuongNguoi"/>
                 </div>
                 <button className="outline-none focus:outline-none bg-green-200 p-2 text-blue-700 font-bold rounded-lg shadow-lg" type="submit">SUBMIT</button>
+                <button className="float-right outline-none focus:outline-none bg-green-200 p-2 rounded-lg shadow-lg" onClick={closeForm}>CLOSE</button>
             </form>
         </div>
       )
