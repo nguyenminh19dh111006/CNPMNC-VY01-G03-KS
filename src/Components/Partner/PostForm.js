@@ -36,7 +36,7 @@ class PostForm extends Component{
         const {IdPhong, TenPhong, LoaiPhong, ThoiGianNhanPhong, ThoiGianTraPhong, SoDem, SoLuongNguoi} = this.state
       return (
         <div>
-            <form className="bg-blue-300 rounded-lg p-4 shadow-lg" onSubmit={this.submitHandler}>
+            <form className="bg-blue-300 rounded-lg p-4 shadow-lg" onSubmit={this.submitHandler} id="newForm">
                 <div className="pb-4">
                     Id phòng:
                     <input className="ml-4 text-sm pl-1 rounded-lg" type="text" value={IdPhong} onChange={this.changeHandler} name="IdPhong"/>
