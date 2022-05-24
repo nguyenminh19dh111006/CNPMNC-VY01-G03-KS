@@ -10,15 +10,7 @@ function PartnerForm(){
   <ul class="relative">
     <li class="relative">
       <button class="flex items-center text-lg py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">
-          <Link to={'/danhsachkhachhang'}>Danh sách khách hàng</Link></button>
-    </li>
-    <li class="relative">
-      <button class="flex items-center text-lg py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">
           <Link to={`/danhsachphong`}>Danh sách phòng</Link></button>
-    </li>
-    <li class="relative">
-      <button class="flex items-center text-lg py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="dark">
-          <Link to={`/danhsachkhachsan`}>Danh sách khách sạn</Link></button>
     </li>
     </ul>
   </div>
