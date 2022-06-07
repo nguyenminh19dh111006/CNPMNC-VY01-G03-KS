@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 import Partner from "./Components/Partner";
 import Hotel from "./Components/Hotel";
 import Payment from "./Components/Payment";
-
+import PaymentFinish from "./Components/PaymentFinish";
 function App() {
 
     return (
@@ -24,6 +24,7 @@ function App() {
                     <Route exact path="/partner" component={Partner}/>
                     <Route exact path="/hotel" component={Hotel}/>
                     <Route exact path="/payment" component={Payment}/>
+                    <Route exact path="/paymentfinish" component={PaymentFinish}/>
                 </Switch>
             </Router>
         </>

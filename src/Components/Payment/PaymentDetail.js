@@ -128,13 +128,13 @@ function PaymentDetail() {
             </div>
 
             <span className="text-lg">Chi tiết giá</span>
-            {dato && (dato.map(Data=><div className="w-1/2 bg-white rounded-lg p-4 shadow-lg">
+            <div className="w-1/2 bg-white rounded-lg p-4 shadow-lg">
             <span className="text-lg font-semibold">Thành tiền</span>
-            <span className="text-lg font-semibold float-right pt-2">{Data.KhoangGia} VND</span>
-            </div>))}
+            <span className="text-lg font-semibold float-right pt-2">VND</span>
+            </div>
 
             <div className="pt-2 text-center mr-24">
-            <span className="text-lg p-2 bg-orange-400 font-semibold text-white rounded-lg"><button>Thanh toán</button></span>
+            <span className="text-lg p-2 bg-orange-400 font-semibold text-white rounded-lg"><Link to="/paymentfinish">Thanh toán</Link></span>
             </div>
         </div>
     );

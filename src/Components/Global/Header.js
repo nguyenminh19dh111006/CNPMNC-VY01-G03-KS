@@ -4,7 +4,9 @@ import { useSelector } from "react-redux";
 
 function Header() {
     const [dropDown, setDropDown] = useState(false);
+    const [dropDown1, setDropDown1] = useState(false);
     const state = useSelector((state) => state);
+    const state1 = useSelector((state) => state);
     return (
         <header className="relative shadow-lg">
             <nav
@@ -34,6 +36,25 @@ function Header() {
                                     className="block px-4 py-2 text-gray-700 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 ">
                                     Đăng ký
                                 </Link>
+                            </div>
+                        </>
+                        <>
+                            <li aria-label="dropdown button" className="mr-5 text-orange-500 hover:text-orange-800 cur" onClick={() => {setDropDown1(!dropDown1);}}>
+                                <span className="pb-2 pl-24">
+                                    <i className={`fas fa-caret-down fa-lg fa-2x cursor-pointer`}></i>
+                                </span>
+                                <br />
+                            </li>
+                        </>
+                        <>
+                            <div onClick={() => setDropDown1(!dropDown1)} onMouseLeave={() => setDropDown1(false)}
+                                className="absolute right-0 md:mt-24 mr-10 xl:mr-24 w-48 rounded-sm  shadow-lg py-1 bg-gray-100 text-sm"
+                                style={!dropDown1 ? { display: "none" }: { display: "block" }}>
+                                <a 
+                                    href="https://vy1-go1-profile-app-s3cic.ondigitalocean.app"
+                                    className="block px-4 py-2 text-gray-700 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 ">
+                                    Đăng nhập
+                                </a>
                             </div>
                         </>
                         <>
