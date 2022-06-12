@@ -60,7 +60,7 @@ function HotelItem() {
                 </div>
                 <div className="pr-8 md:w-3/4">
                     <div className="font-semibold text-2xl flex flex-col md:flex-row md:justify-between">
-                    {doto && (doto.map(dototo=><div className="float-left">
+                    {dota && (dota.map(dototo=><div className="float-left">
                             <span>{khachsan.TenKhachSan} Hotel</span>
                             <br/>
                             <span className=" pt-1"><button className="text-blue-500 border-2 border-blue-500 text-sm rounded-lg bg-white pl-1 pr-1">Khách sạn</button>
