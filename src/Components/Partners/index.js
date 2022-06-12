@@ -11,7 +11,7 @@ function openForm2() {
     document.getElementById("myForm2").style.display = "block";
 }
 
-function Partner() {
+function Partners() {
     useEffect(() => {
         document.title = `PARTNER`;
     }, []); 
@@ -32,4 +32,4 @@ function Partner() {
     );
 }
 
-export default Partner;
+export default Partners;
