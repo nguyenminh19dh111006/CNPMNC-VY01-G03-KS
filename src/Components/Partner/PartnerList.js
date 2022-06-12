@@ -14,6 +14,8 @@ function closeForm() {
 function PartnerList(){
 
     const [IdPhong, setidphong] = useState("");
+    const [IdDiaDiem, setiddiadiem] = useState("");
+    const [IdKhachSan, setkhachsan] = useState("");
     const [TenPhong, settenphong] = useState("");
     const [LoaiPhong, setloaiphong] = useState("");
     const [ThoiGianNhanPhong, setthoigiannhanphong] = useState("");
@@ -36,6 +38,8 @@ function PartnerList(){
         setthoigiantraphong(e.target.ThoiGianTraPhong);
         setsodem(e.target.SoDem);
         setsoluongnguoi(e.target.SoLuongNguoi);
+        setkhachsan(e.target.IdKhachSan);
+        setiddiadiem(e.target.IdDiaDiem);
     }
 
     const submitHandler = e =>{
@@ -71,6 +75,14 @@ function PartnerList(){
                 <input type="text" name="IdPhong" value={IdPhong} onChange={changeHandler} className="ml-4 text-sm pl-1"></input>
             </div>
             <div className="pb-4">
+                Id Khách sạn:
+                <input type="text" name="IdKhachSan" value={IdKhachSan} onChange={changeHandler} className="ml-4 text-sm pl-1"></input>
+            </div>
+            <div className="pb-4">
+                Id Địa điểm:
+                <input type="text" name="IdDiaDiem" value={IdDiaDiem} onChange={changeHandler} className="ml-4 text-sm pl-1"></input>
+            </div>
+            <div className="pb-4">
                 Tên phòng:
                 <input type="text" name="TenPhong" value={TenPhong} onChange={changeHandler} className="ml-4 text-sm pl-1"></input>
             </div>
@@ -104,6 +116,8 @@ function PartnerList(){
     <thead className="border-solid border-2 border-black">
     <tr>
       <th>Id Phòng</th>
+      <th>Id Khách sạn</th>
+      <th>Id Địa điểm</th>
       <th>Tên phòng</th>
       <th>Loại phòng</th>
       <th>Thời gian trả phòng</th>
