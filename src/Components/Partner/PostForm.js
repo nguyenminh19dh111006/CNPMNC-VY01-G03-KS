@@ -8,15 +8,15 @@ function closeForm() {
 
 function PostForm() {
 
-    const [IdPhong, setIdPhong] = useState('');
-    const [TenPhong, setTenPhong] = useState('');
-    const [LoaiPhong, setLoaiPhong] = useState('');
+    const [IdPhong, setIdPhong] = useState();
+    const [TenPhong, setTenPhong] = useState();
+    const [LoaiPhong, setLoaiPhong] = useState();
     const [ThoiGianNhanPhong, setThoiGianNhanPhong] = useState();
-    const [ThoiGianTraPhong, setThoiGianTraPhong] = useState('');
+    const [ThoiGianTraPhong, setThoiGianTraPhong] = useState();
     const [SoDem, setSoDem] = useState();
-    const [SoLuongNguoi, setSoLuongNguoi] = useState('');
-    const [IdKhachSan, setIdKhachSan] = useState('');
-    const [IdDiaDiem, setDiaDiem] = useState('');
+    const [SoLuongNguoi, setSoLuongNguoi] = useState();
+    const [IdKhachSan, setIdKhachSan] = useState();
+    const [IdDiaDiem, setDiaDiem] = useState();
     const [redirectHome,setRedirectHome] = useState(false);
     const insertpostPhong = `http://157.245.207.242:8090/api/phong`;
 
