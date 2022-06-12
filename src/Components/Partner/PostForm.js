@@ -10,14 +10,14 @@ class PostForm extends Component{
         super(props)
         this.state={
             IdPhong: '',
-            IdKhachSan: '',
-            IdDiaDiem: '',
             TenPhong: '',
             LoaiPhong: '',
             ThoiGianNhanPhong: '',
             ThoiGianTraPhong: '',
             SoDem: '',
             SoLuongNguoi: '',
+            IdKhachSan: '',
+            IdDiaDiem: '',
         }
     }
 
@@ -44,14 +44,6 @@ class PostForm extends Component{
                     <input className="ml-4 text-sm pl-1 rounded-lg" type="text" value={IdPhong} onChange={this.changeHandler} name="IdPhong"/>
                 </div>
                 <div className="pb-4">
-                    Id Khách Sạn:
-                    <input className="ml-4 text-sm pl-1 rounded-lg" type="text" value={IdKhachSan} onChange={this.changeHandler} name="IdKhachSan"/>
-                </div>
-                <div className="pb-4">
-                    Id Địa điểm:
-                    <input className="ml-4 text-sm pl-1 rounded-lg" type="text" value={IdDiaDiem} onChange={this.changeHandler} name="IdDiaDiem"/>
-                </div>
-                <div className="pb-4">
                     Tên phòng:
                     <input className="ml-4 text-sm pl-1 rounded-lg" type="text" value={TenPhong} onChange={this.changeHandler} name="TenPhong"/>
                 </div>
@@ -74,6 +66,14 @@ class PostForm extends Component{
                 <div className="pb-4">
                     Số lượng người:
                     <input className="ml-4 text-sm pl-1 rounded-lg" type="text" value={SoLuongNguoi} onChange={this.changeHandler} name="SoLuongNguoi"/>
+                </div>
+                <div className="pb-4">
+                    Id Khách Sạn:
+                    <input className="ml-4 text-sm pl-1 rounded-lg" type="text" value={IdKhachSan} onChange={this.changeHandler} name="IdKhachSan"/>
+                </div>
+                <div className="pb-4">
+                    Id Địa điểm:
+                    <input className="ml-4 text-sm pl-1 rounded-lg" type="text" value={IdDiaDiem} onChange={this.changeHandler} name="IdDiaDiem"/>
                 </div>
                 <button className="outline-none focus:outline-none bg-green-200 p-2 text-blue-700 font-bold rounded-lg shadow-lg" type="submit">SUBMIT</button>
                 <button className="float-right outline-none focus:outline-none bg-green-200 p-2 rounded-lg shadow-lg" onClick={closeForm}>CLOSE</button>
