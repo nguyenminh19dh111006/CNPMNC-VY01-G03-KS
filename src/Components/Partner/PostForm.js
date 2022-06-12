@@ -28,7 +28,7 @@ class PostForm extends Component{
     submitHandler = (e) =>{
         e.preventDefault()
         console.log(this.state)
-        Axios.post('http://localhost:8090/api/phong', this.state).then(response => {
+        Axios.post('http://157.245.207.242:3000/api/phong', this.state).then(response => {
             console.log(response)
         }).catch(error =>{
             console.log(error)
