@@ -10,6 +10,7 @@ import Partner from "./Components/Partner";
 import Hotel from "./Components/Hotel";
 import Payment from "./Components/Payment";
 import PaymentFinish from "./Components/PaymentFinish";
+import Partners from "./Components/Partners";
 function App() {
 
     return (
@@ -25,6 +26,7 @@ function App() {
                     <Route exact path="/hotel" component={Hotel}/>
                     <Route exact path="/payment" component={Payment}/>
                     <Route exact path="/paymentfinish" component={PaymentFinish}/>
+                    <Route exact path="/partners" component={Partners}/>
                 </Switch>
             </Router>
         </>
