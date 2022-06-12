@@ -28,7 +28,7 @@ function HotelItem() {
     },[])
 
     useEffect(()=>{
-        Axios.get(`http://157.245.207.242:8090/api/diadiem/getDiaDiem/${diadiem}`)
+        Axios.get(`http://157.245.207.242:8090/api/khachsan/getDiaDiem/${diadiem}`)
         .then(res => {
             console.log("Getting from ::::",res.data)
             setdiadiembyid(res.data)
