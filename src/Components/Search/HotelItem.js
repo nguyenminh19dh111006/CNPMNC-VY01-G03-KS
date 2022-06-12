@@ -7,6 +7,7 @@ function HotelItem() {
     const [data, setkhachsan] = useState([])
     const [dato, setkhachsanbyhangsao] = useState([])
     const [doto, setdiadiembyid] = useState([])
+    const [dota, setkhachsanbydiadiem] = useState([])
     
     const rating = localStorage.getItem("SEARCH_INFO");
     const diadiem = localStorage.getItem("SEARCH_INFO");
@@ -29,6 +30,14 @@ function HotelItem() {
 
     useEffect(()=>{
         Axios.get(`http://157.245.207.242:8090/api/khachsan/getDiaDiem/${diadiem}`)
+        .then(res => {
+            console.log("Getting from ::::",res.data)
+            setkhachsanbydiadiem(res.data)
+        }).catch(err => console.log(err))
+    },[])
+
+    useEffect(()=>{
+        Axios.get(`http://157.245.207.242:8090/api/diadiem/getDiaDiem/${diadiem}`)
         .then(res => {
             console.log("Getting from ::::",res.data)
             setdiadiembyid(res.data)
