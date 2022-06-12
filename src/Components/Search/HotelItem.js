@@ -29,7 +29,7 @@ function HotelItem() {
     },[])
 
     useEffect(()=>{
-        Axios.get(`http://157.245.207.242:8090/api/khachsan/getDiaDiem/${diadiem}`)
+        Axios.get(`http://157.245.207.242:8090/api/khachsan/getDiaDiem/${rating}`)
         .then(res => {
             console.log("Getting from ::::",res.data)
             setkhachsanbydiadiem(res.data)
@@ -37,7 +37,7 @@ function HotelItem() {
     },[])
 
     useEffect(()=>{
-        Axios.get(`http://157.245.207.242:8090/api/diadiem/getDiaDiem/${diadiem}`)
+        Axios.get(`http://157.245.207.242:8090/api/diadiem/getDiaDiem/${rating}`)
         .then(res => {
             console.log("Getting from ::::",res.data)
             setdiadiembyid(res.data)
@@ -66,7 +66,7 @@ function HotelItem() {
                             <span className=" pt-1"><button className="text-blue-500 border-2 border-blue-500 text-sm rounded-lg bg-white pl-1 pr-1">Khách sạn</button>
                             </span>
                             <br/>
-                            <span className="text-sm">Địa điểm {diadiem} {dototo.TenDiaDiem}</span>
+                            <span className="text-sm">Địa điểm {rating} {dototo.TenDiaDiem}</span>
                         </div>))}
                         <span className="font-normal text-base flex flex-col md:justify-center md:items-end">
                             <span className="text-blue-700 font-semibold">Thanh toán khi nhận phòng</span>
