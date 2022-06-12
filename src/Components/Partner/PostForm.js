@@ -10,6 +10,8 @@ class PostForm extends Component{
         super(props)
         this.state={
             IdPhong: '',
+            IdKhachSan: '',
+            IdDiaDiem: '',
             TenPhong: '',
             LoaiPhong: '',
             ThoiGianNhanPhong: '',
@@ -33,13 +35,21 @@ class PostForm extends Component{
         })
     }
     render() {
-        const {IdPhong, TenPhong, LoaiPhong, ThoiGianNhanPhong, ThoiGianTraPhong, SoDem, SoLuongNguoi} = this.state
+        const {IdPhong,IdKhachSan, IdDiaDiem, TenPhong, LoaiPhong, ThoiGianNhanPhong, ThoiGianTraPhong, SoDem, SoLuongNguoi} = this.state
       return (
         <div>
             <form className="bg-blue-300 rounded-lg p-4 shadow-lg" onSubmit={this.submitHandler} id="newForm">
                 <div className="pb-4">
                     Id phòng:
                     <input className="ml-4 text-sm pl-1 rounded-lg" type="text" value={IdPhong} onChange={this.changeHandler} name="IdPhong"/>
+                </div>
+                <div className="pb-4">
+                    Id Khách Sạn:
+                    <input className="ml-4 text-sm pl-1 rounded-lg" type="text" value={IdKhachSan} onChange={this.changeHandler} name="IdKhachSan"/>
+                </div>
+                <div className="pb-4">
+                    Id Địa điểm:
+                    <input className="ml-4 text-sm pl-1 rounded-lg" type="text" value={IdDiaDiem} onChange={this.changeHandler} name="IdDiaDiem"/>
                 </div>
                 <div className="pb-4">
                     Tên phòng:

@@ -116,8 +116,6 @@ function PartnerList(){
     <thead className="border-solid border-2 border-black">
     <tr>
       <th>Id Phòng</th>
-      <th>Id Khách sạn</th>
-      <th>Id Địa điểm</th>
       <th>Tên phòng</th>
       <th>Loại phòng</th>
       <th>Thời gian trả phòng</th>
