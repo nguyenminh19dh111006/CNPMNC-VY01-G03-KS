@@ -68,11 +68,11 @@ class PostForm extends Component{
                     <input className="ml-4 text-sm pl-1 rounded-lg" type="text" value={SoLuongNguoi} onChange={this.changeHandler} name="SoLuongNguoi"/>
                 </div>
                 <div className="pb-4">
-                    Id Khách sạn:
+                    Id Khách sạn
                     <input className="ml-4 text-sm pl-1 rounded-lg" type="text" value={IdKhachSan} onChange={this.changeHandler} name="IdKhachSan"/>
                 </div>
                 <div className="pb-4">
-                    Id Địa điểm:
+                    Id Địa điểm
                     <input className="ml-4 text-sm pl-1 rounded-lg" type="text" value={IdDiaDiem} onChange={this.changeHandler} name="IdDiaDiem"/>
                 </div>
                 <button className="outline-none focus:outline-none bg-green-200 p-2 text-blue-700 font-bold rounded-lg shadow-lg" type="submit">SUBMIT</button>
